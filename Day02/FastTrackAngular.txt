@@ -1,0 +1,55 @@
+Last Lecture
+Application flow 
+employee
+
+
+{
+	id:9,
+	fname:"Sumit",
+	lname:'Raokhande'
+}
+
+{
+	"id":"9",
+	fname:"Sumit"
+}
+
+
+component u can create in 2 ways 
+1 Manual
+2 Through the cli 
+3 Data binding 
+	- It flows a data from view file to component & vice versa 
+	
+	- Data binding has 2 types 
+	1 One way data binding
+		- It flows data from component to view file 
+		- It flows data  in one direction 
+		- It has 4 implenatation type 
+		 1 string interpolation
+		 2 property binding
+		 3 style binding
+		 4 class binding
+		 
+	2 Two way data binding
+	 - It flows a data from view to component & component to view 
+
+
+Today Sessions
+1 How to Integrate a Bootstrap
+	- To Make Application responsive 
+	- To Make Application Attractive
+	- It Provides template classes
+	1 Online integration
+		24*7 internet 
+		CDN
+	2 offline integration
+	
+	npm install bootstrap@5.0.2
+	write below code in style.css file 
+	
+	@import '~bootstrap/dist/css/bootstrap.css';
+		
+	
+1 String interpolation
+2 Property binding

@@ -1,0 +1,20 @@
+<p>propertybinding works!</p>
+<!-- 
+    - if u want bind data dynamically to particular attribute(html/directive/custom attribute) then we use property binding 
+    - u can apply any html tag 
+    [attributename]="propertyName"
+    - It does not chnage its type of property 
+-->
+    <input [value]="name" type="text" class="form-control w-25" placeholder="Enter the Name ">
+<br><br>
+    <input type="text" class="form-control w-25" [placeholder]="myPlaceholder">
+
+<hr>
+<div> Property binding VS String Interpolation </div>
+
+<div hidden="{{isHidden}}">
+    Display the text using string Interpolation
+</div>
+<div [hidden]="isHidden">
+    Display the text using Property binding
+</div>
