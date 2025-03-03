@@ -1,0 +1,57 @@
+Last Lecture
+1 How to Integrate a Bootstrap
+	- To Make Application responsive 
+	- To Make Application Attractive
+	- It Provides template classes
+	1 Online integration
+		24*7 internet 
+		CDN
+	2 offline integration
+	
+	npm install bootstrap@5.0.2
+	write below code in style.css file 
+	
+	@import '~bootstrap/dist/css/bootstrap.css';
+		
+	
+1 String interpolation
+	<h2> {{name}}</h2>
+	<h2> {{"Hi Welcome "+name}}</h2>
+	<h2> {{isdispaly?name:'Hi wel...'}}</h2>
+	<img src="{{imgUrl}}">
+	
+	
+	.ts 
+	name:string='..';
+	isdispaly:boolean=true;
+	imgUrl="../../assets/bg1.jpg";
+	
+	
+	
+2 Property binding
+	<input [value]="name">
+	
+	
+	<div hidden="{{isHidden}}">
+		....
+	
+	<div [hidden]="isHidden">
+	
+	.ts 
+	name:string='...'
+	isHidden:boolean=false;
+	
+
+
+Today Sessions
+1 Style binding
+2 class binding
+3 event binding
+4 click
+5 template ref variable 
+	- u can access DOM Element information of particular html element
+	- U can apply any html tag 
+6 Real time Example 
+	
+	
+

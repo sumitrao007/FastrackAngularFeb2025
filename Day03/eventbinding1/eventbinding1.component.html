@@ -1,0 +1,29 @@
+<p>eventbinding1 works!</p>
+<!-- 
+    (eventName)="Eventhandler"
+    - eventName => click,change ...
+    - Eventhandler => Ur custom method name. It will create in component file 
+    - It will work all html tag 
+-->
+
+    <button class="btn btn-success" (click)="onClick()" >Click</button> <br><br>
+    <button (click)="onIncrement()"  class="btn btn-warning">Increment</button>
+    <button (click)="onDecrement()" class="btn btn-info">Decrement</button>
+
+    <h2>Display Count:: {{count}} </h2>
+    <br><br>
+    <img title="click on image" (click)="onImageClick()" src="../../assets/product-5.jpg" alt="">
+
+    <hr>
+    <!-- 
+    template ref variable 
+	- u can access DOM Element information of particular html element
+	- U can apply any html tag 
+    - #uniqueName
+    - It is holding ur object/handle/data
+    -->
+    <input #inputname type="text" placeholder="Enter the Name"><br><br>
+    <button (click)="onSend(inputname)" >Send</button> <br><br>
+
+    <input #inputname1 type="text" placeholder="Enter the Name"><br><br>
+    <button (click)="onSend1(inputname1.value)" >Send</button> 
