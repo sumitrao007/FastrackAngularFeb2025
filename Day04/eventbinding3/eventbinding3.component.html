@@ -1,0 +1,28 @@
+<p>eventbinding3 works!</p>
+<!-- 
+    - ngModel
+    - It is attribute directive 
+    - U will get updatated data from view to component & vice versa 
+    - We have to import FormsModule im app.module.ts => in the import section 
+    - we have to use is notation. That notation is called banana in the box notation => [()]
+    - u can apply any html tag 
+    syntax 
+    [(ngModel)]="PropertyName"    
+-->
+
+<input [(ngModel)]="name" type="text" placeholder="Enter the name" class="form-control w-25">
+{{name}}
+<hr>
+
+<input type="text" 
+[(ngModel)]="username"
+class="form-control w-25" placeholder="Enter the Username"> <br>
+<input type="password"  
+[(ngModel)]="password"
+class="form-control w-25" placeholder="Enter the password">
+<button (click)="onLogin()" class="btn btn-success">Login</button>
+<hr>
+
+<input (change)="onChange()" type="text" class="form-control w-25" placeholder="Enter the Name"> <br><br>
+
+<input [(ngModel)]="inputText" (change)="onChange1()" type="text" class="form-control w-25" placeholder="Enter the Name">

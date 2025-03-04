@@ -1,0 +1,109 @@
+Last Lecture
+1 Style binding
+	<h2 [style.color]="mycolor" > Apply Style Binding</h2>
+	<h2 [style.color]="rating<4?'red':'green'" > Apply Style Binding</h2>
+	
+	<div [ngStyle]="jsonObj" >
+	
+	.ts 
+	
+	mycolor:string='red';
+	rating:number=2;
+	
+	jsonObj={
+		color:"...",
+		fontFamily:"...",
+		'font-size':"32px"
+	}
+	
+2 class binding
+
+	<h2 [class]="myclass" > ...</h2>
+	<h2 [class.danger]="rating<4"
+		[class.warning]="rating>4"
+	> ...</h2>
+	
+	<div [ngClass]="jsonObj">
+	
+	.ts 
+	myclass:string='success';
+	rating:number=2;
+	
+	isError:boolean=true;
+	isSpecial:boolean=true;
+	
+	jsonObj={
+		'success':!this.isError,
+		'danger':this.isError
+		'special':this.isSpecial
+	}
+	
+	
+	
+
+3 event binding
+	<button (click)="onClick()">
+	<img src="..." (click)="onImage()" 
+	
+	.ts 
+	
+	onClick(){
+		...
+	}
+	
+	onImage(){
+	...
+	}
+4 click
+5 template ref variable 
+	- u can access DOM Element information of particular html element
+	- U can apply any html tag 
+	
+	<input #inputname>
+	<button (click)="onClick(inputname)">
+	<input #inputname1>
+	<button (click)="onClick1(inputname1.value)">
+	
+	.ts 
+	onClick(myname:any){
+		console.log(...)
+		console.log(myname.value)
+		myname.style.background="green"
+		...
+	}
+	
+	onClick1(myvalue:string){
+		....
+	}
+	
+6 Real time Example
+	<input #num1>
+	<input #num2>
+	<button (click)="onAdddition(num1.value,num2.value)">
+	<input [value]="result">
+	
+	
+	.ts 
+	onAdddition(num1:any,num2:any){
+		let n1=+num1
+		let n2=+num2
+		this.result=n1+n2;
+	}
+
+Today Sessions
+1 Two Way Data Binding
+2 change event
+3 Structural Directive
+	- If u want manipulate or modify ur DOM Structure then we use structural directive
+	1 *ngIf
+	2 *ngFor
+	3 *ngSwitch
+	
+4 if directive
+- component directive
+	<ng-template>
+5 for directive
+
+	
+	
+
