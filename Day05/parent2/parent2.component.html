@@ -1,0 +1,9 @@
+<p>parent2 works!</p>
+<h2> {{strDataReceived}} </h2>
+<h2>ID :: {{jsonDataReceived.id}} </h2>
+<h2>First name :: {{jsonDataReceived.fname}} </h2>
+<h2>Role:: {{jsonDataReceived.role}} </h2>
+<hr>
+<app-child2 (ChildStrEvent)="strDataReceived=$event" 
+            (childJsonData)="jsonDataReceived=$event"
+></app-child2>

@@ -1,0 +1,67 @@
+Last Lecture
+1 Two Way Data Binding
+	- ngModel
+	<input [(ngModel)]="name">{{name}}
+	
+	.ts 
+	
+	name:string='';
+2 change event
+	<input [(ngModel)]="name" (change)="onChange()">
+	.ts 
+	onChange(){
+		...
+		...
+	}
+3 Structural Directive
+	- If u want manipulate or modify ur DOM Structure then we use structural directive
+	1 *ngIf
+	2 *ngFor
+	3 *ngSwitch
+	
+4 if directive
+
+<div *ngIf="rating<4;else myelsepart">
+	...
+</div>
+
+<ng-template #myelsepart>
+	<h2>....
+</ng-template>
+
+
+- component directive
+	<ng-template>
+5 for directive
+	<table class="...">
+		<thead>
+			<tr>
+				<th>Sr no</th>
+				<th>...
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let product of arrproduct;index as i">
+				<td>{{i+1}}</td>
+				<td> {{product.name}}</td>
+				...
+			</tr>
+		</tbody>
+	</table>
+
+Today Sessions
+1 switch directive
+2 Component Interaction
+	- we can send data from one component to another component & vice versa
+	- establish the parent-child relation
+3 @Input
+	- To send a data from parent to child 
+4 @Output
+	- To send data from child to parent
+5 inbuilt Pipe 
+	- It transform ur data without changing its original value 
+
+
+	
+	
+
