@@ -1,0 +1,30 @@
+Last Lecture
+1 switch directive
+2 Component Interaction
+	- we can send data from one component to another component & vice versa
+	- establish the parent-child relation
+3 @Input
+	- To send a data from parent to child 
+4 @Output
+	- To send data from child to parent
+5 inbuilt Pipe 
+	- It transform ur data without changing its original value 
+	
+Today Sessions
+1 Custom Pipe 
+	- PipeTransform Interface 
+	- transform(value:any,...args[])
+	ng g p pipename
+2 Http Services 
+ - we have to import a module tat name is HTTPClientModule => app.module.ts 
+ - we have to create a service => DI => HttpClient 
+ - angular community creates a backend for education purpose/ Demo purpose
+	https://jsonplaceholder.typicode.com/posts
+	=> It is fake backend => post/put/delete => that data is not stored into the database  but it gives a response of ur request 
+ 
+
+
+
+	
+	
+
