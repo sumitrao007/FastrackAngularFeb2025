@@ -1,0 +1,41 @@
+Last Lecture
+1 Custom Pipe 
+	- PipeTransform Interface 
+	- transform(value:any,...args[])
+	ng g p pipename
+2 Http Services 
+ - we have to import a module tat name is HTTPClientModule => app.module.ts 
+ - we have to create a service => DI => HttpClient 
+ - angular community creates a backend for education purpose/ Demo purpose
+	https://jsonplaceholder.typicode.com/posts
+	=> It is fake backend => post/put/delete => that data is not stored into the database  but it gives a response of ur request 
+3 get 
+4 post 
+	
+Today Sessions
+1 put => update 
+2 delete 
+3 Error Handling 
+4 Routing
+	- u can navigate from one component to another component
+ 
+	steps 
+	1 Configure the route 
+	2 use <router-outlet>
+	3 establish the link/navigate method between the component
+
+5 Template Driven Form 
+	- login form,signup,f/b form 
+	- all basic level validation is performed on View File 
+	
+	FormControl 
+	 - It is Class 
+	 
+	 1 valid => true/false 
+	 2 invalid => true / false 
+	 3 touched => true / false 
+	 4 pristine => true / false 
+	 5 dirty => true / false 
+	 6 errors => It is Object => boolean 
+	
+
